@@ -1,8 +1,6 @@
 ## Welcome to Doug Liebe's Repository
 
-You can use the [editor on GitHub](https://github.com/dougliebe/dougliebe.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Here you can find a collection of small projects that I will be working on in my spare time to better understand machine-learning and dynamical systems modeling in my PhD program.
 
 ### Markdown
 
