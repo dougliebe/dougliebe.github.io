@@ -3,10 +3,12 @@ Player | Skill
 -------|-------
 Player X | 9
 Players Y & Z | 3
-__Average skill of line XYZ = 5__
+__Average skill of line XYZ | 5__
 
-Players A, B, C Skill - 5
-__Average skill of line ABC = 5__
+Player | Skill
+-------|-------
+Players A, B, C | 5
+__Average skill of line ABC | 5__
 
 Most would assume that XYZ skill will be >> 5 due to the effect of having player X (a star)
 
