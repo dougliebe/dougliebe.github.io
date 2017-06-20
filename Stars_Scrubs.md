@@ -118,5 +118,5 @@ o3 <- rbind(o1,o2)
 ```
 
 
-![alt text](https://user-images.githubusercontent.com/29124840/27358534-26d39a42-55e5-11e7-907e-d535e81dd3b8.png)
+![alt text](https://user-images.githubusercontent.com/29124840/27358534-26d39a42-55e5-11e7-907e-d535e81dd3b8.png)  
 It appears that stars cannot even lift the production of two lower level players to that of three players of even fantasy production. When a great player plays with only slightly below average players, their total line fantasy production sees drops of 10% or greater on avereage.
