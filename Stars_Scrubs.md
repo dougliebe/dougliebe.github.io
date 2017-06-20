@@ -78,6 +78,13 @@ agglines <- rbind(aggh, agga)
 ```
 At this point I matched player index numbers with data from Puckalytics.com for the 2015-2016 season
 To calculate Fpts60 for each player I used the following formula:
-#### Fpts60 = (Goals/60 *3)+(Primary Assists/60 *2)+(iCorsi/60 *0.50*0.50)
+#### Fpts60 = (Goals/60 *3)+(Primary Assists/60 *2)+(iCorsi/60 *0.50 *0.50)
+I like to use iCorsi instead of shots because of its higher year-to-year correlations
+Speaking of correlations... I adjusted the previous formula heavily to take into account the loss in predictability assocaited with goals, assists and corsi. 
+Stat | Goals (i+1) | P1 Assists (i+1) | iCorsi (i+1)
+----|-------------|-------------------|------------
+Goals (i) | ~35% |      |
+P1 Assists (i) |     | ~32% |
+iCorsi (i) |   |   | ~75%
 
 
