@@ -86,5 +86,35 @@ P1 Assists -> P1 Assists (year+1) = ~35%
 iCorsi (year+1) = ~75%
 #### Fpts60 = (Goals/60 *3) *0.32+(Primary Assists/60 *2) *0.35+(iCorsi/60 *0.50 *0.50) *0.75
 
+Now for each shift we have: __who was out there, how many points they scored, how long they were out there, and what each player's fantasy production is__
+
+I need to figure out who the best player on the line is and how much better he is than the worst player. I choose these two variables as proxies for determining stars and determining skill gap, respectively.
+
+```markdown
+## Make a comparison to lines with same average as crosby's, but with no superstar
+agglines$max <- apply(agglines[9:11],1,max)
+agglines$min <- apply(agglines[9:11],1,min)
+# I turned points per second into points per hour, just to get rounder numbers
+agglines$pps <- agglines$pps*3600
+agglines$dif <- agglines$max - agglines$min
+agglines$avg <- (agglines$h1fpts60+agglines$h2fpts60+agglines$h3fpts60)/3.0
+# I removed shifts with huge scores really fast because I think they are just noise that skews the data
+no_outliers <- subset(agglines, agglines$pps<150)
+no_outliers$stars_and_scrubs <- ifelse(no_outliers$max > 4.8 & no_outliers$dif > 1.7,1,0)
+no_outliers$stars_and_scrubs <- ifelse(no_outliers$dif < 1.7,"Low Skill Gap",ifelse(no_outliers$max > 4.8 & no_outliers$dif > 1.7,"Star with Lower Skilled",0))
+```
+Notice at the end of this snippet that I determined my 'stars and scrubs' lines based two criteria:
+- Having one player with a max production over 4.8 Fpts/60
+- Having a difference between best and worst player of at least 1.7 Fpts/60
+
+Both of these values were chosen because they are the 3rd quartile of their respective categories
+
+The last thing I did to tailor the data was remove lines with line averages that were outside the normal range (there were hardly any lines that had a star AS WELL AS a total line average Fpts60 below 3.8)
+
+```markdown
+o1 <- subset(no_outliers, no_outliers$stars_and_scrubs == "Low Skill Gap" & no_outliers$avg > 2.8 & no_outliers$avg <4.8)
+o2 <- subset(no_outliers, no_outliers$stars_and_scrubs == "Star with Lower Skilled" & no_outliers$avg > 3.8 & no_outliers$avg < 4.8)
+o3 <- rbind(o1,o2)
+```
 
 
