@@ -81,10 +81,10 @@ To calculate Fpts60 for each player I used the following formula:
 #### Fpts60 = (Goals/60 *3)+(Primary Assists/60 *2)+(iCorsi/60 *0.50 *0.50)
 I like to use iCorsi instead of shots because of its higher year-to-year correlations
 Speaking of correlations... I adjusted the previous formula heavily to take into account the loss in predictability assocaited with goals, assists and corsi. 
-Stat | Goals (i+1) | P1 Assists (i+1) | iCorsi (i+1)
-----|-------------|-------------------|------------
-Goals (i) | ~35% | --     | --
-P1 Assists (i) |  -- | ~32% | --
-iCorsi (i) | -- | -- | ~75%
+Goals -> Goals (year+1) = ~32%
+P1 Assists -> P1 Assists (year+1) = ~35%
+iCorsi (year+1) = ~75%
+#### Fpts60 = (Goals/60 *3) *0.32+(Primary Assists/60 *2) *0.35+(iCorsi/60 *0.50 *0.50) *0.75
+
 
 
