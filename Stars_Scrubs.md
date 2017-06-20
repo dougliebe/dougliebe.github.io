@@ -83,8 +83,8 @@ I like to use iCorsi instead of shots because of its higher year-to-year correla
 Speaking of correlations... I adjusted the previous formula heavily to take into account the loss in predictability assocaited with goals, assists and corsi. 
 Stat | Goals (i+1) | P1 Assists (i+1) | iCorsi (i+1)
 ----|-------------|-------------------|------------
-Goals (i) | ~35% |      |
-P1 Assists (i) |     | ~32% |
-iCorsi (i) |   |   | ~75%
+Goals (i) | ~35% | --     | --
+P1 Assists (i) |  -- | ~32% | --
+iCorsi (i) | -- | -- | ~75%
 
 
