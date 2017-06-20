@@ -118,3 +118,4 @@ o3 <- rbind(o1,o2)
 ```
 
 
+![alt text](https://user-images.githubusercontent.com/29124840/27358534-26d39a42-55e5-11e7-907e-d535e81dd3b8.png)
