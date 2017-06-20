@@ -1,4 +1,4 @@
-#### This project was supposed to investigate the performance of "stars and scrubs" lines and normal NHL lines: where all three players are of simialr skill. The common conception is that a star will raise the skill of the line greater than a line of equal average skill (but without a star). For example:
+#### This project was supposed to investigate the performance of "stars and scrubs" lines and normal NHL lines: where all three players are of similar skill. The common conception is that a star will raise the skill of the line greater than a line of equal average skill (but without a star). For example:
 
 Player | Skill
 -------|-------
