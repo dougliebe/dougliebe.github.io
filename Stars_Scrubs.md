@@ -15,6 +15,8 @@ Most would assume that XYZ skill will be >> 5 due to the effect of having player
 
 
 ```markdown
+## First, I loaded my play-by-play data for the previous season
+
 # the events log
 temp = load("source-data\\nhlscrapr-20162017.RData") ## If you used option 1 (1 season)
 all = get(temp)
